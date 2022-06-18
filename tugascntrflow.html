@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas controflow</title>
+</head>
+<body>
+    
+
+    <script>
+       var lagi = true;
+       while(lagi === true) {
+        let nilai = parseInt(prompt('Masukan angka'));
+        if(nilai > 80 && nilai < 100) {
+            alert(`Selamat anda lulus dengan nilai A`);
+        } else if(nilai <= 80 && nilai >= 60) {
+            alert(`Selamat anda lulus dengan nilai B`);
+        } else if(nilai < 80 && nilai >= 60) {
+            alert(`Mohon Maaf nilai anda C akan di pertimbangkan`);
+        } else if ( nilai < 60 && nilai >= 40) {
+            alert(`Mohon Maaf anda tidak lulus`);
+        }  else if ( nilai < 40) {
+            alert(`Mohon Maaf anda tidak lulus`);
+        } else {
+            alert(`${nilai} Bukan angka`);
+            
+        }
+        lagi = confirm('Coba lagi ?');
+       }
+
+        
+        
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>
